@@ -9,12 +9,19 @@ import Foundation
 
 class SmartHome {
     let name: String
-    let lighting: Lighting
-    let audio: Audio
+    let devices: [Lighting]
     
     init(name: String) {
         self.name = name
     }
     
+    func displayMenu() {
+        print("""
+-----MENU-----
+1. Lighting
+2. Audio
+--------------
+""")
+    }
     
 }

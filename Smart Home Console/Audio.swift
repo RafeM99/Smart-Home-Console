@@ -8,5 +8,9 @@
 import Foundation
 
 class Audio: SmartHome {
+    let room: String
+    var volume: Int
+    var on: Bool
+    
     
 }
