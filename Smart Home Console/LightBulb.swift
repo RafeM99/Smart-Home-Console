@@ -7,27 +7,19 @@
 
 import Foundation
 
-class LightBulb {
+class LightBulb: Devices {
     let brand: String
-    let room: String
     var brightness: Int
-    var on: Bool
     
     init(brand: String, room: String) {
         self.brand = brand
         
         brightness = 0
-        on = false
+        
+        super.init(room: room)
     }
     
-    func power() {
-        if on == true {
-            on = false
-        }
-        else {
-            on = true
-        }
-    }
+
     
     func changeBrightness() {
         print("Current brightness: \(brightness)")
